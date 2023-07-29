@@ -1,0 +1,55 @@
+<%- include ("partials/header") -%>
+    <div class="weatherBox">
+        <div class="location">
+            <%= Location %>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div id="windBox" class="commoncss">
+                    <h1>Wind Speed</h1>
+                    <div class="content"><%= WindSpeed %></div>
+                </div>
+                <div id="pressureBox" class="commoncss">
+                    <h1>Pressure</h1>
+                    <div class="content"><%= Pressure %></div>
+                </div>
+            </div>
+
+            <div class="center commoncss">
+                <div class="iconBox">
+                    <image class="icon" src="https://openweathermap.org/img/wn/<%=Icon%>.png" alt="icon" />
+                    <p><%= Description %></p>
+                </div>
+                <div id="tempBox" class="content"><%= temp %> &#8451;</div>
+                <div class="temprange">
+                    <div>
+                        <p>Min Temp</p>
+                        <div id="tempMin"><%= tempMin %> &#8451;</div>
+                    </div>
+                    <div>
+                        <p>Feels Like</p>
+                        <div id="feelslike"><%= feelslike %> &#8451;</div>
+                    </div>
+                    <div>
+                        <p>Max Temp</p>
+                        <div id="tempMax"><%= tempMax %> &#8451;</div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="right">
+                <div id="visibilityBox" class="commoncss">
+                    <h1>Visibility</h1>
+                    <div class="content"><%= visibility %></div>
+                </div>
+                <div id="humidityBox" class="commoncss">
+                    <h1>Humidity</h1>
+                    <div class="content"><%= Humidity %></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partials/footer") -%>

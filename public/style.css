@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    z-index:10;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    color:rgba(0, 0, 0, 0.767);
+    text-align: center;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(
+    45deg,
+    hsl(240deg 96% 67%) 0%,
+    hsl(246deg 97% 68%) 10%,
+    hsl(250deg 97% 70%) 20%,
+    hsl(254deg 98% 72%) 30%,
+    hsl(257deg 99% 73%) 40%,
+    hsl(260deg 100% 75%) 50%,
+    hsl(262deg 100% 80%) 60%,
+    hsl(263deg 100% 85%) 70%,
+    hsl(264deg 100% 90%) 80%,
+    hsl(269, 92%, 91%) 90%,
+    hsl(0, 100%, 96%) 100%
+    );
+    min-height:100vh;
+    max-width:100vw;
+    
+}
+
+
+
+.location{
+    font-size:5rem;
+    margin-bottom:10px;
+    font: weight 1000px;;
+    color:rgba(54, 0, 0, 0.726);
+    font-weight: 600;
+}
+.weatherBox{
+    display:flex;
+    flex-direction: column;
+    padding:10px 15px;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+@media only screen and  (max-width:1150px) {
+    .container{
+        flex-direction:column;
+    }
+    .left{
+        order:2;
+        margin:40px 0;
+    }
+    .center{
+        order:1;
+    }
+    .right{
+        order:3;
+    }
+}
+
+#windBox , #visibilityBox{
+    margin-bottom:40px;
+}
+
+#windBox , #pressureBox , #visibilityBox , #humidityBox{
+    width:250px;
+    height:250px;  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#windBox h1 , #pressureBox h1, #visibilityBox h1, #humidityBox h1{
+    font-size:40px;
+    border-bottom:5px dashed black;
+    font-weight:100;
+    font-family: 'Staatliches', cursive;
+    margin-bottom:40px;
+} 
+
+
+.commoncss{
+    box-shadow:10px 10px 30px rgba(0,0,0,0.3);
+    background-color:rgba(255, 255, 255,.8);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    border:3px solid black;
+    text-align:center;
+    padding:20px 10px;
+}
+
+.center{
+    width:500px;
+    height:540px; 
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.center div{
+    height:30%;
+}
+.temprange{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    /* align-items:center; */
+}
+
+#tempMin , #tempMax , #feelslike {
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4rem;
+    border:1px solid black;
+}
+
+.iconBox{
+    margin:10px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width:120px;
+    height:120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:60px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.content{
+    font-size:4rem;
+    font-weight:1000;
+    color:rgba(0, 0, 0, 0.614);
+    font-family: 'Ruda', sans-serif;
+}
+
+#tempBox{
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:30px;
+}
+
+nav input{
+    height:46px;
+    width:300px;
+    font-size:20px;
+    font-weight:100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    background-color:rgba(255, 255, 255, 0.733);
+}
+
+nav button{
+    padding:11px 15px;
+    margin-left:5px;
+    font-size:20px;
+    font-weight:100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:10px;
+}
